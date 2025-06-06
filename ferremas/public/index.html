@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERREMAS - Distribuidora de Productos de Ferretería y Construcción</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <a href="#" class="logo">FERRE<span>MAS</span></a>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="¿Qué estás buscando?">
+                    <button>Buscar</button>
+                </div>
+                
+                <div class="user-actions">
+                    <a href="#" id="login-btn">Iniciar Sesión</a>
+                    <a href="#">Carrito (0)</a>
+                </div>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li>
+                        <a href="#">Herramientas</a>
+                        <div class="dropdown">
+                            <a href="#">Herramientas Manuales</a>
+                            <a href="#">Martillos</a>
+                            <a href="#">Destornilladores</a>
+                            <a href="#">Llaves</a>
+                            <a href="#">Herramientas Eléctricas</a>
+                            <a href="#">Taladros</a>
+                            <a href="#">Sierras</a>
+                            <a href="#">Lijadoras</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Materiales de Construcción</a>
+                        <div class="dropdown">
+                            <a href="#">Materiales Básicos</a>
+                            <a href="#">Cemento</a>
+                            <a href="#">Arena</a>
+                            <a href="#">Ladrillos</a>
+                            <a href="#">Acabados</a>
+                            <a href="#">Pinturas</a>
+                            <a href="#">Barnices</a>
+                            <a href="#">Cerámicos</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Equipos de Seguridad</a>
+                        <div class="dropdown">
+                            <a href="#">Cascos</a>
+                            <a href="#">Guantes</a>
+                            <a href="#">Lentes de Seguridad</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Accesorios</a>
+                        <div class="dropdown">
+                            <a href="#">Tornillos y Anclajes</a>
+                            <a href="#">Fijaciones y Adhesivos</a>
+                            <a href="#">Equipos de Medición</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Sucursales</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+     <!-- Carrusel de Marcas -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <h2 class="section-title">Marcas de Confianza</h2>
+            
+            <div id="brandCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="2"></button>
+                </div>
+                
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <!-- Slide 1 - Hilti -->
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/1200x500/8B0000/FFFFFF?text=HILTI+MULTIPACK" alt="Hilti Multipack" class="d-block w-100">
+                        <div class="brand-badge hilti-badge">HILTI</div>
+                        <div class="carousel-caption">
+                            <h3>MULTIPACK HILTI</h3>
+                            <p>Opciones adaptadas a tus necesidades. Descubre la línea completa de herramientas profesionales Hilti con la calidad alemana que necesitas para tus proyectos más exigentes.</p>
+                            <a href="#" class="btn">Ver Productos Hilti</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 - Black & Decker -->
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x500/2E8B57/FFFFFF?text=BLACK+%26+DECKER+COLLECTION" alt="Black & Decker Collection" class="d-block w-100">
+                        <div class="brand-badge blackdecker-badge">BLACK & DECKER</div>
+                        <div class="carousel-caption">
+                            <h3>COLECCIÓN BLACK & DECKER</h3>
+                            <p>Herramientas versátiles para el hogar y el trabajo. Encuentra la combinación perfecta de calidad, durabilidad y precio accesible en nuestra amplia gama de productos.</p>
+                            <a href="#" class="btn">Explorar Colección</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 - Bosch -->
+                    <div class="carousel-item">
+                        <img src="./assent/imagenes/Carrusel/imag_carrusel4.jpg" alt="Bosch Jardín" class="d-block w-100">
+                        <div class="brand-badge bosch-badge">BOSCH</div>
+                        <div class="carousel-caption">
+                            <h3>LÍNEA COMPLETA DE HERRAMIENTAS JARDÍN</h3>
+                            <p>Transforma tu jardín con las herramientas más innovadoras de Bosch. Tecnología alemana para el cuidado perfecto de tus espacios verdes con máxima eficiencia.</p>
+                            <a href="#" class="btn">Ver Herramientas Jardín</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Tu socio confiable en ferretería y construcción</h1>
+            <p>Con más de 40 años de experiencia, FERREMAS ofrece los mejores productos de marcas reconocidas para tus proyectos de construcción y renovación.</p>
+            <a href="#" class="btn">Explorar productos</a>
+        </div>
+    </section>
+    
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="/assent/imagenes/Materiales Basicos/Captura de pantalla 2025-03-27 215327.png" alt="Taladro Bosch" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Taladro Percutor Total GSB 13 RE</h3>
+                        <p class="product-price">$59.990</p>
+                        <div class="product-meta">
+                            <span>Total</span>
+                            <span>Stock: 15</span>
+                        </div>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="/assent/imagenes/Herramientas Manuales/Captura de pantalla 2025-03-27 213418.png" alt="Llave inglesa" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Martillo"</h3>
+                        <p class="product-price">$15.990</p>
+                        <div class="product-meta">
+                            <span>Stanley</span>
+                            <span>Stock: 24</span>
+                        </div>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="/assent/imagenes/Materiales Basicos/Captura de pantalla 2025-03-27 215535.png" alt="Pintura" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Cierra electrica Makita</h3>
+                        <p class="product-price">$32.990</p>
+                        <div class="product-meta">
+                            <span>Makita</span>
+                            <span>Stock: 8</span>
+                        </div>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="/assent/imagenes/Equipos de Seguridad/Captura de pantalla 2025-03-27 220648.png" alt="Casco de seguridad" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Guantes de seguridad</h3>
+                        <p class="product-price">$12.990</p>
+                        <div class="product-meta">
+                            <span>MSA</span>
+                            <span>Stock: 32</span>
+                        </div>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Nuestras Categorías</h2>
+            
+            <div class="categories-grid">
+                <!-- Category 1 -->
+                <div class="category-card">
+                    <img src="/api/placeholder/200/150" alt="Herramientas" class="category-img">
+                    <h3 class="category-title">Herramientas</h3>
+                </div>
+                
+                <!-- Category 2 -->
+                <div class="category-card">
+                    <img src="/api/placeholder/200/150" alt="Materiales de Construcción" class="category-img">
+                    <h3 class="category-title">Materiales de Construcción</h3>
+                </div>
+                
+                <!-- Category 3 -->
+                <div class="category-card">
+                    <img src="/api/placeholder/200/150" alt="Equipos de Seguridad" class="category-img">
+                    <h3 class="category-title">Equipos de Seguridad</h3>
+                </div>
+                
+                <!-- Category 4 -->
+                <div class="category-card">
+                    <img src="/api/placeholder/200/150" alt="Accesorios" class="category-img">
+                    <h3 class="category-title">Accesorios</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Login Modal -->
+    <div class="login-modal" id="login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Acceso a FERREMAS</h2>
+                <button class="close-modal" id="close-modal">&times;</button>
+            </div>
+            
+            <div class="tabs">
+                <button class="tab active" data-tab="login">Iniciar Sesión</button>
+                <button class="tab" data-tab="register">Registrarse</button>
+            </div>
+            
+            <!-- Login Form -->
+            <div class="tab-content active" id="login-content">
+                <form>
+                    <div class="form-group">
+                        <label for="login-email" class="form-label">Correo electrónico</label>
+                        <input type="email" id="login-email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="login-password" class="form-label">Contraseña</label>
+                        <input type="password" id="login-password" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="user-type" class="form-label">Tipo de usuario</label>
+                        <select id="user-type" class="form-select">
+                            <option value="client">Cliente</option>
+                            <option value="admin">Administrador</option>
+                            <option value="seller">Vendedor</option>
+                            <option value="warehouse">Bodeguero</option>
+                            <option value="accountant">Contador</option>
+                        </select>
+                    </div>
+                    
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Recordarme</label>
+                    </div>
+                    
+                    <button type="submit" class="form-submit">Iniciar Sesión</button>
+                </form>
+            </div>
+            
+            <!-- Register Form -->
+            <div class="tab-content" id="register-content">
+                <form>
+                    <div class="form-group">
+                        <label for="register-name" class="form-label">Nombre completo</label>
+                        <input type="text" id="register-name" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="register-email" class="form-label">Correo electrónico</label>
+                        <input type="email" id="register-email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="register-password" class="form-label">Contraseña</label>
+                        <input type="password" id="register-password" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="register-confirm-password" class="form-label">Confirmar contraseña</label>
+                        <input type="password" id="register-confirm-password" class="form-input" required>
+                    </div>
+                    
+                    <div class="remember-me">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">Acepto los términos y condiciones</label>
+                    </div>
+                    
+                    <button type="submit" class="form-submit">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre FERREMAS</h3>
+                    <p>Somos una distribuidora de productos de ferretería y construcción con más de 40 años de experiencia en el mercado chileno.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Sucursales</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul class="contact-info">
+                        <li>Santiago, Chile</li>
+                        <li>contacto@ferremas.cl</li>
+                        <li>+56 2 2123 4567</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" class="social-link">F</a>
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">I</a>
+                        <a href="#" class="social-link">Y</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FERREMAS - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

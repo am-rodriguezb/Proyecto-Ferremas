@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 
 // Iniciar servidor
 app.listen(PORT, async () => {
-    console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
+    console.log(`Servidor corriendo en http://localhost:${PORT}`);
     await testConnection();
 });
 
