@@ -1,38 +1,7 @@
 {
-    "name": "ferremas",
-    "description": "Aplicación Ferremas con Express y TiDB",
-    "framework": "express",
-    "buildCommand": "echo 'No build required'",
-    "startCommand": "npm start",
-    "installCommand": "npm install",
-    "distDir": "./",
-    "main": "server/server.js",
-    "env": {
-        "NODE_ENV": "production"
-    },
-    "database": {
-        "type": "tidb",
-        "required": true
-    },
-    "endpoints": [
-        {
-            "path": "/",
-            "method": "GET",
-            "description": "Página principal"
-        },
-        {
-            "path": "/api/*",
-            "method": "GET",
-            "description": "Endpoints de API para datos de TiDB"
-        }
-    ],
-    "dependencies": {
-        "cors": "^2.8.5",
-        "dotenv": "^16.5.0",
-        "express": "^5.1.0",
-        "mysql2": "^3.14.1"
-    },
-    "devDependencies": {
-        "nodemon": "^3.1.10"
-    }
+  "app_id": "dataapp-bGxsdFlO",
+  "app_name": "fortune-500-PaaG",
+  "app_type": "dataapp",
+  "description": "Access and analyze valuable insights from Fortune 500 companies.",
+  "app_version": "1.0.0"
 }
