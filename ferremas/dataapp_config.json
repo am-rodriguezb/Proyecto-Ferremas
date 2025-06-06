@@ -16,14 +16,14 @@
     },
     "endpoints": [
         {
-        "path": "/",
-        "method": "GET",
-        "description": "Página principal"
+            "path": "/",
+            "method": "GET",
+            "description": "Página principal"
         },
         {
-        "path": "/api/*",
-        "method": "GET", 
-        "description": "Endpoints de API para datos de TiDB"
+            "path": "/api/*",
+            "method": "GET",
+            "description": "Endpoints de API para datos de TiDB"
         }
     ],
     "dependencies": {
