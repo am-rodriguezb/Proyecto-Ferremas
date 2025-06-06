@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const FortuneController = require('../controllers/fortuneController');
+const productoController = require('../controllers/productoController');
 
 // Rutas principales
 router.get('/companies', FortuneController.getAllCompanies);
@@ -16,5 +17,8 @@ router.get('/test', (req, res) => {
     timestamp: new Date().toISOString()
     });
 });
+
+// Rutas de productos
+router.get('/producto', productoController.getProducts);
 
 module.exports = router;
