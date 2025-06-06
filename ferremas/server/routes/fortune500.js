@@ -9,6 +9,7 @@ router.get('/company/:rank', FortuneController.getCompanyByRank);
 router.get('/search', FortuneController.searchCompanies);
 router.get('/top-revenue', FortuneController.getTopByRevenue);
 
+
 // Ruta de prueba
 router.get('/test', (req, res) => {
     res.json({
@@ -19,6 +20,6 @@ router.get('/test', (req, res) => {
 });
 
 // Rutas de productos
-router.get('/producto', productoController.getProducts);
+router.get('/', productoController.getProducts);
 
 module.exports = router;
